@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Resume Matcher</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'DM Sans',sans-serif;
+    background:linear-gradient(135deg,#050b1e,#0b132f);
+    color:#e5e7eb;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 48px;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+}
+.hero{
+    text-align:center;
+    margin-top:120px;
+}
+.hero h1{
+    font-size:4rem;
+    background:linear-gradient(135deg,#00e0ff,#c084fc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.hero p{
+    max-width:700px;
+    margin:24px auto;
+    color:#9ca3af;
+    font-size:1.2rem;
+}
+.btn{
+    padding:14px 30px;
+    border-radius:14px;
+    border:none;
+    cursor:pointer;
+    font-size:1.1rem;
+}
+.primary{
+    background:#00e0ff;
+}
+.secondary{
+    background:#1f2937;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">📊 Smart Resume Matcher</div>
+  <div>
+    <button class="btn secondary">Login</button>
+    <button class="btn primary" onclick="goStart()">Get Started</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Match Your Resume<br>To Your Dream Job</h1>
+  <p>
+    Leverage artificial intelligence to analyze your resume against job
+    descriptions, identify skill gaps, and improve interview chances.
+  </p>
+
+  <button class="btn primary" onclick="goStart()">Start Matching Now</button>
+</section>
+
+<script>
+function goStart(){
+    window.location.href = "/matcher";
+}
+</script>
+
+</body>
+</html>
